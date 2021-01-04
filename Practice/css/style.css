@@ -5,6 +5,13 @@
 body{
 	background-color: rgba(235, 232, 211, 1);
 }
+/*Header CSS*/
+
+.nav-tabs .nav-link:focus{
+	border-collapse: initial;
+}
+
+/*End of Header CSS*/
 
 /* Start Middle Section CSS*/
 
