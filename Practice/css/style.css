@@ -28,17 +28,17 @@ body{
 }
 
 #nature-tile{
-	background: url('/Images/IMG_1.jpg') no-repeat center;
+	background: url('/Images/5m.JPG') no-repeat center;
 	background-size: 500px auto;
 }
 
 #wedding-tile{
-	background: url('/Images/IMG_3.jpeg') no-repeat center;
+	background: url('/Images/6m.JPEG') no-repeat center;
 	background-size: 500px auto;
 }
 
 #group-tile{
-	background: url('/Images/SHAHEER 3.png') no-repeat center;
+	background: url('/Images/7m.PNG') no-repeat center;
 	background-size: 500px auto;
 }
 
