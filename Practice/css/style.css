@@ -1,0 +1,151 @@
+*{
+	margin: 0px;
+}
+
+
+
+/* Start Middle Section CSS*/
+
+.row{
+	--bs-gutter-x: 0rem;
+}
+
+
+#nature-tile, #wedding-tile, #group-tile{
+	height: 250px;
+	border-radius: 2%;
+    overflow: hidden;
+    position: relative;
+}
+
+#nature-tile:hover, #wedding-tile:hover, #group-tile:hover{
+	box-shadow: 0px 0px 12px black;
+	/*opacity: 0.9;*/
+}
+
+#nature-tile{
+	background: url('/Images/IMG_1.jpg') no-repeat center;
+	background-size: 500px auto;
+}
+
+#wedding-tile{
+	background: url('/Images/IMG_3.jpeg') no-repeat center;
+	background-size: 500px auto;
+}
+
+#group-tile{
+	background: url('/Images/SHAHEER 3.png') no-repeat center;
+	background-size: 500px auto;
+}
+
+#nature-tile span, #wedding-tile span, #group-tile span{
+	position: absolute;
+    bottom: 0%;
+    right: 0%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 20px;
+    opacity: .8;
+    width: 100%;
+}
+
+#nature-tile span:hover, #wedding-tile span:hover, #group-tile span:hover{
+	opacity: 0.6;
+}
+
+/*End Middle Section CSS*/
+
+/*Start Footer CSS*/
+
+footer div img{
+	width: 40px;
+	height: 40px;
+}
+
+footer div img:hover{
+	opacity: 0.8;
+}
+
+/*End Footer CSS*/
+
+/*Media Queries*/
+
+/*Media queries for custom carousel*/
+@media(max-width: 1400px){
+	section .carousel .carousel-item img{
+		height: 450px;
+	}
+}
+
+@media(max-width: 1200px){
+	section .carousel .carousel-item img{
+		height: 450px;
+	}
+}
+
+@media(max-width: 992px){
+	section .carousel .carousel-item img{
+		height: 450px;
+	}
+}
+
+@media(max-width: 768px){
+	section .carousel .carousel-item img{
+		height: 384px;
+	}
+}	
+
+@media(max-width: 576px){
+	section .carousel .carousel-item img{
+		height: 288px;
+	}
+}
+
+@media(max-width: 290px){
+	section .carousel .carousel-item img{
+		height: 145px;
+	}
+}
+
+/*Media queries for categories section	*/
+
+
+@media(min-width: 992px){
+	#nature-tile, #wedding-tile, #group-tile{
+		margin-right: 8px;
+		margin-left: 8px;
+	}
+}	
+
+@media(min-width: 768px) and (max-width: 992px){
+	#nature-tile.col-md-6{
+		width: 48%;
+		margin-left: 6px;
+		margin-right:auto; 
+	}
+	#wedding-tile.col-md-6{
+		width: 48%;
+        margin-right: 6px;
+        margin-left: auto;
+	}
+	#group-tile.col-md-12{
+		width: 99%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	#group-tile{
+	background: url('/Images/SHAHEER 3.png') no-repeat center;
+	background-size: 1000px 500px;
+    }
+}
+
+@media(max-width: 767px){
+	#nature-tile.col-sm-12, #wedding-tile.col-sm-12, #group-tile.col-sm-12{
+		width: 99%;
+		margin-right: auto;
+		margin-left: auto;
+		background-size: 800px 500px;
+	}
+}
+
