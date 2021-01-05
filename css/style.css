@@ -7,7 +7,25 @@ body{
 }
 /*Header CSS*/
 
+#header-nav{
+    background-color: black;
+}
 
+#header-nav .nav-brand h1{
+	font-family: 'Poppins', sans-serif;
+}
+
+#header-nav .nav-item a{
+	font-family: 'Poppins', sans-serif;
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+.nav-tabs:hover{
+	border:none;
+}
 
 /*End of Header CSS*/
 
@@ -23,27 +41,28 @@ body{
 	border-radius: 2%;
     overflow: hidden;
     position: relative;
+    box-shadow: 0px 0px 5px black;
     transition-property: box-shadow;
     transition-duration: .5s;
     transition-timing-function: ease-out;
 }
 
 #nature-tile:hover, #wedding-tile:hover, #group-tile:hover{
-	box-shadow: 0px 0px 15px black;
+	box-shadow: 0px 15px 15px black;
 }
 
 #nature-tile{
-	background: url('../Images/5m.jpg') no-repeat center;
+	background: url('../Images/nature.jpg') no-repeat center;
 	background-size: 500px auto;
 }
 
 #wedding-tile{
-	background: url('../Images/6m.jpeg') no-repeat center;
+	background: url('../Images/wedding.jpg') no-repeat center;
 	background-size: 500px auto;
 }
 
 #group-tile{
-	background: url('../Images/7m.png') no-repeat center;
+	background: url('../Images/group.jpg') no-repeat center;
 	background-size: 500px auto;
 }
 
@@ -54,6 +73,7 @@ body{
     text-align: center;
     background-color: rgba(0,0,0,0.5);
     color: white;
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     opacity: .8;
     width: 100%;
@@ -85,14 +105,25 @@ footer div img:hover{
 	height: 45px;
 }
 
+footer div span{
+	font-family: 'Poppins', sans-serif;
+}
+
 /*End Footer CSS*/
 
 /*Media Queries*/
 
 /*Media queries for custom carousel*/
+
+@media(min-width: 1400px){
+	section .carousel .carousel-item img{
+		height: 550px;
+	}
+}
+
 @media(max-width: 1400px){
 	section .carousel .carousel-item img{
-		height: 450px;
+		height: 500px;
 	}
 }
 
@@ -128,11 +159,19 @@ footer div img:hover{
 
 /*Media queries for categories section	*/
 
-
-@media(min-width: 992px){
-	#nature-tile, #wedding-tile, #group-tile{
+@media(min-width: 1200px){
+	#nature-tile.col-lg, #wedding-tile.col-lg, #group-tile.col-lg{
 		margin-right: 8px;
 		margin-left: 8px;
+		background-size: 700px 500px;
+	}
+}	
+
+@media(min-width: 992px){
+	#nature-tile.col-lg, #wedding-tile.col-lg, #group-tile.col-lg{
+		margin-right: 8px;
+		margin-left: 8px;
+		background-size: 600px 500px;
 	}
 }	
 
@@ -151,11 +190,8 @@ footer div img:hover{
 		width: 99%;
 		margin-right: auto;
 		margin-left: auto;
+		background-size: 1080px 500px;
 	}
-	#group-tile{
-	background: url('/Images/SHAHEER 3.png') no-repeat center;
-	background-size: 1000px 500px;
-    }
 }
 
 @media(max-width: 767px){
@@ -163,7 +199,25 @@ footer div img:hover{
 		width: 99%;
 		margin-right: auto;
 		margin-left: auto;
+		background-size: 900px 500px;
+	}
+}
+
+@media(max-width: 576px){
+	#nature-tile.col-sm-12, #wedding-tile.col-sm-12, #group-tile.col-sm-12{
+		width: 99%;
+		margin-right: auto;
+		margin-left: auto;
 		background-size: 800px 500px;
+	}
+}
+
+@media(max-width: 330px){
+	#nature-tile.col-sm-12, #wedding-tile.col-sm-12, #group-tile.col-sm-12{
+		width: 99%;
+		margin-right: auto;
+		margin-left: auto;
+		background-size: 500px 500px;
 	}
 }
 
