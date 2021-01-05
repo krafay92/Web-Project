@@ -57,13 +57,14 @@ body{
     font-size: 20px;
     opacity: .8;
     width: 100%;
-    transition-property: opacity;
+    transition-property: opacity ,font-size;
     transition-duration: .5s;
     transition-timing-function: ease-out;
 }
 
 #nature-tile span:hover, #wedding-tile span:hover, #group-tile span:hover{
 	opacity: 0.6;
+	font-size: 30px;
 }
 
 /*End Middle Section CSS*/
@@ -75,7 +76,7 @@ footer div img{
 	height: 40px;
 	transition-property: width, height;
 	transition-duration: .2s;
-	transition-timing-function: linear;
+	transition-timing-function: ease-out;
 }
 
 footer div img:hover{
