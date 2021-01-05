@@ -33,17 +33,17 @@ body{
 }
 
 #nature-tile{
-	background: url('/Images/5m.JPG') no-repeat center;
+	background: url('../Images/5m.jpg') no-repeat center;
 	background-size: 500px auto;
 }
 
 #wedding-tile{
-	background: url('/Images/6m.JPEG') no-repeat center;
+	background: url('../Images/6m.jpeg') no-repeat center;
 	background-size: 500px auto;
 }
 
 #group-tile{
-	background: url('/Images/7m.PNG') no-repeat center;
+	background: url('../Images/7m.png') no-repeat center;
 	background-size: 500px auto;
 }
 
